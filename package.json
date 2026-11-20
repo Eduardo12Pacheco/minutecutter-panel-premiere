@@ -1,11 +1,10 @@
 {
-  "name": "premiere-ext",
+  "name": "minutecutter-cep",
   "version": "0.1.0",
-  "description": "Premiere Pro extension (CEP panel) scaffolding",
+  "description": "Adobe Premiere Pro 2022 CEP panel for no-ripple cutting of video and linked audio",
   "private": true,
+  "license": "MIT",
   "scripts": {
-    "dev": "node scripts/dev.js",
-    "package": "node scripts/package.js",
     "test": "node tests/harness.js"
   },
   "engines": {
