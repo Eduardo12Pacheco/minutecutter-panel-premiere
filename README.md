@@ -1,5 +1,11 @@
 # ⏱️ MinuteCutter — Panel CEP para Premiere Pro
 
+[![CI](https://github.com/Eduardo12Pacheco/minutecutter-cep/actions/workflows/ci.yml/badge.svg)](https://github.com/Eduardo12Pacheco/minutecutter-cep/actions/workflows/ci.yml)
+
+**TL;DR (English):** Adobe Premiere Pro 2022 CEP panel that cuts video and linked audio from a clip's source ranges in one action. Chosen ranges stay contiguous, get a 140% scale, and later clips keep their absolute positions (no ripple). Verified on Premiere Pro 22.5.0 (Windows) with 25 regression assertions.
+
+Quickstart (3 commands): `git clone https://github.com/Eduardo12Pacheco/minutecutter-cep.git` · create `%APPDATA%\Adobe\CEP\extensions\com.pelot.minutecutter` and copy the contents of `extension\` into it · `npm test`. See *Quick Start* for the one-time `PlayerDebugMode` registry step.
+
 Panel CEP para **Premiere Pro 2022** que recorta rangos de un clip de video **directamente desde el material fuente** (tiempos de fuente, no de timeline) en una sola operación: corta video + audio vinculado, conserva los rangos elegidos como pedazos contiguos, les aplica **escala automática 140 %** y **no mueve el material posterior** (modo sin ripple).
 
 ![Flujo de corte](docs/flow.svg)
@@ -250,6 +256,7 @@ Instrucciones literales para que un agente de IA realice la instalación en una 
 
 ```
 minutecutter-cep/
+├── .github/workflows/ci.yml # CI: Node 22 + npm test
 ├── extension/
 │   ├── CSXS/manifest.xml   # panel PPRO 22.x, CSXS 11, UI "Minute Cutter"
 │   ├── client/             # panel (index.html, index.css, index.js)
@@ -259,8 +266,9 @@ minutecutter-cep/
 │   └── installation.svg    # flujo de instalación (diagrama)
 ├── tests/harness.js        # tests del harness no-ripple
 ├── .gitignore
+├── LICENSE                 # MIT
 ├── README.md
-└── package.json            # tooling de dev (scaffold) + npm test
+└── package.json            # npm test (harness no-ripple)
 ```
 
 > El path del host (`host/main.jsx`) se deriva en runtime desde la URL del panel; no quedan rutas de usuario hardcodeadas.
@@ -269,7 +277,9 @@ minutecutter-cep/
 
 ## ⚖️ Licencia
 
-No se ha definido una licencia pública todavía: este repositorio es código propio de distribución y, hasta que se decida lo contrario, se publica **sin licencia formal**. Al no tener licencia, no se concede permiso explícito de copia, modificación o redistribución más allá de lo que indica la ley aplicable (reservados todos los derechos). Se puede clonar y usar el panel para instalarlo y probarlo, pero no redistribuirlo como producto propio.
+Este repositorio se distribuye bajo la **licencia MIT**; el texto completo está en [LICENSE](LICENSE). Se permite copiar, modificar, fusionar, publicar, distribuir, sublicenciar y vender el software conservando el aviso de copyright y el texto de la licencia. El software se entrega **sin garantía** de ningún tipo.
+
+El alcance de la licencia cubre el código de este repositorio. "Adobe", "Premiere Pro" y "CEP" son marcas de Adobe Inc.; este proyecto no está afiliado ni respaldado por Adobe.
 
 ---
 
