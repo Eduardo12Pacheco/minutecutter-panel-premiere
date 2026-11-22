@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">MinuteCutter</title>
+  <desc id="desc">Panel CEP para Premiere Pro 2022: rangos del material fuente de un clip pasan a pedazos contiguos con escala 140 %, y el hueco queda en el timeline sin mover el material posterior.</desc>
+
+  <!-- Paleta del proyecto (mismos tonos que docs/assets/readme/flow.svg). Fondo sólido para leerse en GitHub claro y oscuro. -->
+  <defs>
+    <linearGradient id="keep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2e9e5b"/>
+      <stop offset="1" stop-color="#57c27d"/>
+    </linearGradient>
+    <linearGradient id="scale" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b26a14"/>
+      <stop offset="1" stop-color="#e09a3c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="400" rx="28" fill="#10141c"/>
+
+  <g id="title-block" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif">
+    <text x="72" y="112" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="2" fill="#6f9be0">PANEL CEP · PREMIERE PRO 2022</text>
+    <text x="72" y="196" font-size="76" font-weight="800" fill="#e8eef7">MinuteCutter</text>
+    <text x="72" y="252" font-size="24" fill="#c3ccda">Corta rangos desde el material fuente,</text>
+    <text x="72" y="284" font-size="24" fill="#c3ccda">con audio vinculado y escala 140 %.</text>
+    <text x="72" y="316" font-size="24" fill="#c3ccda">Sin mover el material posterior.</text>
+    <text x="72" y="368" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#8b98ad">Windows · Premiere Pro 22.x · CEP 11 · MIT</text>
+  </g>
+
+  <g id="timeline-proof" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif">
+    <rect x="680" y="52" width="448" height="300" rx="20" fill="#171e26" stroke="#33404d" stroke-width="1.5"/>
+    <text x="712" y="92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" letter-spacing="1.5" fill="#8b98ad">DEL MATERIAL AL TIMELINE</text>
+
+    <text x="712" y="136" font-size="19" fill="#c3ccda">Fuente · 0:00–1:00</text>
+    <rect x="712" y="164" width="384" height="44" rx="8" fill="#26314a"/>
+    <rect x="776" y="164" width="64" height="44" rx="4" fill="url(#keep)"/>
+    <rect x="968" y="164" width="96" height="44" rx="4" fill="url(#keep)"/>
+    <g stroke="#e8eef7" stroke-width="2">
+      <line x1="776" y1="152" x2="776" y2="216"/>
+      <line x1="840" y1="152" x2="840" y2="216"/>
+      <line x1="968" y1="152" x2="968" y2="216"/>
+      <line x1="1064" y1="152" x2="1064" y2="216"/>
+    </g>
+
+    <text x="712" y="252" font-size="19" fill="#c3ccda">Timeline · sin ripple</text>
+    <rect x="712" y="268" width="64" height="44" rx="4" fill="url(#scale)"/>
+    <rect x="776" y="268" width="96" height="44" rx="4" fill="url(#scale)"/>
+    <text x="744" y="296" text-anchor="middle" font-size="18" font-weight="700" fill="#1b1206">140 %</text>
+    <text x="824" y="296" text-anchor="middle" font-size="18" font-weight="700" fill="#1b1206">140 %</text>
+    <rect x="872" y="268" width="224" height="44" rx="4" fill="none" stroke="#6b7a90" stroke-width="2" stroke-dasharray="7 6"/>
+    <text x="984" y="296" text-anchor="middle" font-size="18" fill="#f5d6a4">hueco</text>
+
+    <rect x="712" y="324" width="16" height="16" rx="4" fill="#57c27d"/>
+    <text x="736" y="338" font-size="18" fill="#c3ccda">conservado</text>
+    <rect x="872" y="324" width="16" height="16" rx="4" fill="#26314a" stroke="#6b7a90" stroke-width="1"/>
+    <text x="896" y="338" font-size="18" fill="#c3ccda">descartado</text>
+  </g>
+</svg>

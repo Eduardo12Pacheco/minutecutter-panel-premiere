@@ -33,7 +33,7 @@
     </g>
     <text x="130" y="178" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600">GitHub</text>
     <text x="130" y="198" text-anchor="middle" fill="#c8d1dc" font-size="10">clonar o ZIP</text>
-    <text x="130" y="214" text-anchor="middle" fill="#c8d1dc" font-size="10">minutecutter-cep</text>
+    <text x="130" y="214" text-anchor="middle" fill="#c8d1dc" font-size="10">minutecutter-panel-premiere</text>
   </g>
 
   <line x1="228" y1="159" x2="276" y2="159" stroke="#6b7a90" stroke-width="2.5" marker-end="url(#arrow)"/>
@@ -78,5 +78,5 @@
   <!-- Nota PlayerDebugMode -->
   <rect x="40" y="256" width="822" height="48" rx="12" fill="#3a2e1e"/>
   <text x="451" y="276" text-anchor="middle" fill="#f5d6a4" font-size="12" font-weight="600">una sola vez: PlayerDebugMode = 1 bajo HKCU\Software\Adobe\CSXS.11</text>
-  <text x="451" y="295" text-anchor="middle" fill="#ecd3ad" font-size="10">luego reiniciá Premiere · panel en Window &gt; Extensions &gt; Minute Cutter</text>
+  <text x="451" y="295" text-anchor="middle" fill="#ecd3ad" font-size="10">luego reinicia Premiere · panel en Window &gt; Extensions &gt; Minute Cutter</text>
 </svg>
